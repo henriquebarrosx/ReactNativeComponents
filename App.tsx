@@ -9,6 +9,7 @@ import {
   SafeAreaView,
   useColorScheme,
 } from 'react-native';
+import InputPicker from './src/components/InputPicker';
 
 const App = () => {
   const [inputValue, setInputValue] = useState('');
@@ -45,6 +46,20 @@ const App = () => {
         onChangeText={setInputValue}
         placeholderTextColor={'#bdbdbd'}
         placeholder="Enter your password here"
+      />
+
+      <View style={styles.diviser} />
+
+      <InputPicker
+        label="My country"
+        value={inputValue}
+        onChange={setInputValue}
+        placeholder="Select your country"
+        options={[
+          {label: 'Option 1'},
+          {label: 'Option 2'},
+          {label: 'Option 3'},
+        ]}
       />
     </SafeAreaView>
   );
