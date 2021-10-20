@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import InputField from './src/components/InputField/InputText';
+import InputField from './src/components/InputText';
 
 import {
   View,
